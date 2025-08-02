@@ -1,0 +1,75 @@
+.colours-button {
+  margin: 0 auto;
+  display: block;
+  background: #fbf0df;
+  color: #1a1a1a;
+  border: 0;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  transition: 0.1s;
+  cursor: pointer;
+  width: 20em;
+}
+
+/* Mudança de cor do botão ao passar o mouse */
+.api-colours:hover .colours-button {
+  background-color: #2980b9;
+}
+
+.dropdown-buttons-colours {
+  margin: 0 auto;
+  display: block;
+  width: 20rem;
+}
+.dropdown-option-button {
+  width: 100%; /* para ocupar a largura completa do dropdown */
+  box-sizing: border-box;
+  background: #fbf0df;
+  color: #1a1a1a;
+  border: 0;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0;
+  font-weight: 700;
+  transition: 0.1s;
+  cursor: pointer;
+  text-align: left; /* para texto ficar alinhado à esquerda */
+}
+
+/* Arredondar topo do primeiro botão */
+.dropdown-option-button:first-child {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Arredondar base do último botão */
+.dropdown-option-button:last-child {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+/* Aplica no botão selecionado do dropdown */
+.dropdown-option-button:hover {
+  background: #f3d5a3;
+  transform: translateY(-1px);
+  border: 0.0625rem solid #000; /* borda preta em todos os lados */
+  box-sizing: border-box;
+
+}
+/* .colours-button:hover { */
+/*   background: #f3d5a3; */
+/*   transform: translateY(-1px); */
+/*   cursor: pointer; */
+/* } */
+/* Mostrar dropdown quando passar o mouse no container */
+/* .api-colours:hover .colours-button { */
+/*   display: block; */
+/* } */
+
+/* .api-colours:hover .dropdown-menu { */
+/*   background-color: #2980b9; */
+/* } */
+
+
+

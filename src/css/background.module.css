@@ -1,0 +1,24 @@
+.api-colours {
+  min-height: 100vh;
+  transition: background 0.3s;
+}
+
+.bg-branco {
+  background-color: #ffffff;
+}
+
+.bg-preto {
+  background-color: #000000;
+}
+
+.bg-azul {
+  background-color: #3498db;
+}
+
+.bg-vermelho {
+  background-color: #e74c3c;
+}
+
+.bg-amarelo {
+  background-color: #f1c40f;
+}
