@@ -10,7 +10,7 @@ const app = (
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/change-colours" element={<App />} />
         {/* <Route path="/cadastro" element={<Cadastro />} /> */}
         {/* <Route path="/sobre" element={<Sobre />} /> */}
       </Routes>
