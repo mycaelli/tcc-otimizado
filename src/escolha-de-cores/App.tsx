@@ -35,17 +35,4 @@ export function App() {
 }
 
 export default App;
-// import APIColours from "./APIColours"
-// import "./css/index.css";
-// import "./css/buttons.css";
-//
-// export function App() {
-//   return (
-//     <div className="app">
-//       <h1>Vamos mudar as cores da página</h1>
-//         <APIColours />
-//     </div>
-//   );
-// }
-//
-// export default App;
+

@@ -1,47 +1,21 @@
-import { serve } from "bun";
-import index from "./index.html";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { App } from "./escolha-de-cores/App";
+// import Cadastro from "./cadastro/Cadastro";
+// import Sobre from "./sobre/Sobre";
 
-const server = serve({
-  routes: {
-    // Serve index.html for all unmatched routes.
-    "/*": index,
-    "/colours": {
-      async GET(req) {
-        return Response.json({
-          message: "Colours page is on baby!",
-          method: "GET",
-        });
-      },
- 
-      // async GET(req) {
-      //   return Response.json({
-      //     message: "Hello, world!",
-      //     method: "GET",
-      //   });
-      // },
-      // async PUT(req) {
-      //   return Response.json({
-      //     message: "Hello, world!",
-      //     method: "PUT",
-      //   });
-      // },
-    },
+const elem = document.getElementById("root")!;
+const app = (
+  <StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        {/* <Route path="/cadastro" element={<Cadastro />} /> */}
+        {/* <Route path="/sobre" element={<Sobre />} /> */}
+      </Routes>
+    </BrowserRouter>
+  </StrictMode>
+);
 
-    "/api/hello/:name": async req => {
-      const name = req.params.name;
-      return Response.json({
-        message: `Hello, ${name}!`,
-      });
-    },
-  },
-
-  development: process.env.NODE_ENV !== "production" && {
-    // Enable browser hot reloading in development
-    hmr: true,
-
-    // Echo console logs from the browser to the server
-    console: true,
-  },
-});
-
-console.log(`🚀 Server running at ${server.url}`);
+createRoot(elem).render(app);
